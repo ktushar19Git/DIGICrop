@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+
+  font-family:  Verdana;
+	font-size: smaller;
 }
 
 .App-logo {
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #001429;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +38,277 @@
   to {
     transform: rotate(360deg);
   }
+}
+.DivMargin
+{
+  margin: 10px;
+}
+.DivMarginHeader
+{
+  background-color: #001429;
+  height: 100%;
+  border-radius: 15px;
+  
+}
+.DivMarginFooter
+{
+  
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  color:yellow;
+  
+  height: 100%;
+  border-radius: 15px;
+  
+}
+.DivMarginHeaderInner
+{
+  
+  background-color: #001429;
+  height: 100%;
+  border-radius: 15px;
+  
+  
+}
+.DivMarginFooterInner
+{
+  
+  background-color: #001429;
+  height: 100%;
+  border-radius: 15px;
+  
+}
+.DivMarginContent
+{
+  
+  
+  border-radius: 15px;
+  
+}
+.DivMarginContentInner
+{
+  
+  background-color: #001429;
+  height: 100%;
+  border-radius: 15px;
+    
+}
+
+.DivFooterCopyright
+{
+  margin: 20px;
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+  /*font-weight: bolder;*/
+  color:maroon;
+  
+  
+}
+.DivContents
+{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: mintcream;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  color: #001429;
+  border-radius: 10px;
+  
+  word-wrap: break-word;
+  
+}
+.DivContentsInner
+{
+  
+  width: 100%; 
+}
+
+.ContentMainLable
+{
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  color:maroon;
+  text-transform: uppercase;
+  width: 100%;
+  
+
+}
+.TableCellMenu
+{
+  vertical-align: top;
+  width: 15%;
+  height: 15%;  
+}
+.TableContents
+{
+  
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+    
+}
+
+.TableCellContents
+{
+  
+  width: 100%;
+  height: 100%;
+  
+    
+}
+.TableParent
+{
+  width: 100%; 
+  
+  background-color: #001429;
+  border-radius: 0px;
+  
+}
+.divMainCurve
+{
+  
+  border-radius: 15px;
+  background-color:palegreen;
+  
+}
+.ButtonRegister
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+
+}
+.ButtonLogin
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  
+}
+.DivMarginSignUp
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #001429;
+  margin: 20px;
+  background-color: white;
+  
+  padding: 10px; 
+  
+}
+.DivMarginSignUpInner
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #001429;
+  background-color: white;
+  border: #001429 1px solid;
+  padding: 10px; 
+  
+  height: 100%;
+}
+.HeaderRow
+{
+  text-align: left;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: whitesmoke;
+  
+  background-color: #001429;
+  border-bottom: 3px #001429 solid;
+  
+  
+}
+.DetailsRow
+{
+  text-align: left;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #001429;
+  
+  background-color: white;
+  margin-bottom: 10x;
+}
+.DetailsRowli
+{
+  text-align: left;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #001429;
+  
+  background-color: white;
+  
+  
+}
+.Margin20px
+{
+    margin: 20x;
+    
+    padding: 20px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.DivGroup
+{
+  border: #001429 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.DivMarginCreateAccount
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #001429;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  padding: 10px; 
+  display: grid;
+  border: #001429 1px solid;
+  
+}
+.HeaderSection
+{
+  text-align: center;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #001429;
+  border-bottom: 3px #001429 solid;
+}
+.TextField
+{
+  
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  color: #001429;
+  border-bottom: 3px #001429 solid;
+}
+.DetailsSection
+{
+  text-align: center;
+	margin: 20px;
+  background-color: whitesmoke;
+  padding: 10px; 
+  display: grid;
+  
 }

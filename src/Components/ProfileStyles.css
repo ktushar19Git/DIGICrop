@@ -1,0 +1,92 @@
+*
+{
+	margin: 0 ;
+	padding: 0 ;
+	box-sizing: border-box;
+}
+body
+{
+	/*background-color: #001429;*/
+	background-color:blanchedalmond;
+	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		
+}
+.menu-bar_Profile
+{
+	background: #001429;
+	text-align: center;
+	font-family:  Verdana;
+	font-size: smaller;
+	font-weight: bolder;
+	
+}
+.menu-bar_Profile ul
+{
+	display: inline-flex;
+	list-style-type: none;
+	color:black;
+}
+.menu-bar_Profile ul li
+{
+	width: 75px;
+	margin: 10px;
+	padding: 10px;
+}
+.menu-bar_Profile ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+.menu-bar_Profile ul li:hover
+{
+	background:darkmagenta;
+	border-radius: 3px;
+	color: red;
+
+}
+.sub-menu-1
+{
+	display: none;
+	
+}
+.menu-bar_Profile ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: darkmagenta;
+	margin-top: 10px;
+	margin-left: -200px;
+}
+.menu-bar_Profile ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar_Profile ul li:hover .sub-menu-1 ul li
+{
+	width: 225px;
+	padding: 10px;
+	border-bottom: 1px solid red;
+	background: transparent;
+	border-radius: 0;
+	text-align: right;
+}
+.menu-bar_Profile ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+	background-color: gold;
+	text-align: center;
+	font-weight: bolder;
+	font-variant-caps: all-petite-caps;
+}
+.menu-bar_Profile ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:maroon;
+}
+.iconsmargin
+{
+	margin: 2px;
+	align-self: center;
+}
+

@@ -1,0 +1,88 @@
+*
+{
+	margin: 0 ;
+	padding: 0 ;
+	box-sizing: border-box;
+}
+body
+{
+	/*background-color: #001429;*/
+	background-color:blanchedalmond;
+	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		
+}
+.menu-bar
+{
+	background:tomato;
+	text-align: center;
+	font-family:  Verdana;
+	font-size: smaller;
+	font-weight: bolder;
+	font-variant-caps: all-petite-caps;
+	
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style-type: none;
+	color: #fff;
+}
+.menu-bar ul li
+{
+	width: 150px;
+	margin: 10px;
+	padding: 10px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active,.menu-bar ul li:hover
+{
+	background: green;
+	border-radius: 3px;
+	color: red;
+
+}
+.sub-menu-1
+{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: green;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 225px;
+	padding: 10px;
+	border-bottom: 1px solid red;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:maroon;
+}
+.iconsmargin
+{
+	margin: 2px;
+	align-self: center;
+}
+
