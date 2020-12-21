@@ -1,5 +1,5 @@
 import { colors } from '@material-ui/core'
-import React from 'react'
+import React,{Component} from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -20,27 +20,15 @@ import Footer from '../Footer'
 import ButtonAppBar from '../ButtonAppBar'
 import Signup from '../register-page/Signup';
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
-}));
-
-function HomePage() {
-    const classes = useStyles();
+class HomePage extends Component {
+    render()
+    {
     return (
 
-        <div className="App" >
+        <div  >
 
             <div class="divMainCurve">
-                <Table className={classes.table} aria-label="simple table" class="TableParent" >
+                <Table  class="TableParent" >
                     <TableBody>
                         <TableRow>
                             <TableCell >
@@ -77,6 +65,7 @@ function HomePage() {
 
         </div>
     );
+    }
 
 }
 export default HomePage

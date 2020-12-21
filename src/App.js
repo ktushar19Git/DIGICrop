@@ -28,6 +28,10 @@ import Signup from './Components/register-page/Signup';
 import HomePage from './Components/home-page/HomePage';
 import CreateAccount from './Components/create-account/CreateAccount';
 import LoginPage from './Components/login-page/LoginPage';
+import ContactUs from './Components/contact-us/ContactUs';
+import SubmitData from './Components/submit-data/SubmitData';
+
+
 
 import {
   BrowserRouter as Router,
@@ -59,6 +63,8 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/CreateAccount" exact component={CreateAccount} />
           <Route path="/LoginPage" exact component={LoginPage} />
+          <Route path="/ContactUs" exact component={ContactUs} />
+          <Route path="/SubmitData" exact component={SubmitData} />
         </Switch>
       </BrowserRouter>
   );

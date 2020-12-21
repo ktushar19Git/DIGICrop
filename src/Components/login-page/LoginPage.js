@@ -1,5 +1,5 @@
 import { colors } from '@material-ui/core'
-import React from 'react'
+import React,{Component} from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -23,6 +23,7 @@ import ButtonAppBar from '../ButtonAppBar'
 import Signup from '../register-page/Signup';
 import TextField from "@material-ui/core/TextField";
 
+import firebase from '../../services/firebase';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,14 +37,85 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function LoginPage() {
-    const classes = useStyles();
-    return (
+class LoginPage extends Component {
 
-        <div className="App" >
+    constructor(props)
+    {
+        super(props);
+        this.fnLogin = this.fnLogin.bind(this);
+        this.HandleChange = this.HandleChange.bind(this);
+        this.state = {
+            Email :"",
+            Password:""
+        }
+    }
+    HandleChange(e)
+    {
+        this.setState(
+            {
+                [e.target.name] : e.target.value
+            }
+        )
+    }
+    
+    fnLogin() 
+    {
+        
+       try
+       {
+           //alert(this.state.Email)
+
+           let strErr = "";   
+        if(this.state.Email=="")
+        {
+            strErr = strErr + "Please enter Email Address\n";   
+
+        }
+        if(this.state.Password=="")
+        {
+            strErr = strErr + "Please enter Password\n";   
+
+        }
+        
+        if(strErr!="")
+        {
+            alert(strErr);
+        }
+        else
+        {
+            firebase.auth().signInWithEmailAndPassword(this.state.Email,this.state.Password).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode === 'auth/wrong-password') {
+                    alert('Wrong password.');
+                } else {
+                    alert(errorMessage);
+                }
+                console.log(error);
+                });
+
+        }
+
+           
+
+        
+       }
+       catch (error) 
+       {
+        alert(error.message);
+        }
+
+      }
+
+    render()
+    {
+    return(
+
+        <div  >
 
             <div class="divMainCurve">
-                <Table className={classes.table} aria-label="simple table" class="TableParent" >
+                <Table  class="TableParent" >
                     <TableBody>
                         <TableRow>
                             <TableCell >
@@ -67,6 +139,9 @@ function LoginPage() {
                                                     label="Email Address"
                                                     
                                                     variant="outlined"
+                                                    name = "Email"
+                                                    value = {this.state.Email}
+                                                    onChange={this.HandleChange}
                                                 />
                                                 </div>
                                                 <div>
@@ -74,6 +149,9 @@ function LoginPage() {
                                                     label="Phone Number"
                                                     
                                                     variant="outlined"
+                                                    name = "Phone"
+                                                    value = {this.state.Phone}
+                                                    onChange={this.HandleChange}
                                                 />
                                                 </div>
                                                 <div>
@@ -81,6 +159,9 @@ function LoginPage() {
                                                     label="Password"
                                                     type="password"        
                                                     variant="outlined"
+                                                    name = "Password"
+                                                    value = {this.state.Password}
+                                                    onChange={this.HandleChange}
                                                 />
                                                 </div>
                                                 
@@ -95,6 +176,7 @@ function LoginPage() {
                                             fontWeight: "bolder",
                                             marginBottom: "10px",
                                         }}
+                                        onClick={this.fnLogin}
 
                                     >
                                         <DoneIcon></DoneIcon>Login
@@ -128,6 +210,7 @@ function LoginPage() {
 
         </div>
     );
+                                    }
 
 }
 export default LoginPage

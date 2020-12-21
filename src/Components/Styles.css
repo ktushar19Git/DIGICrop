@@ -85,4 +85,25 @@ body
 	margin: 2px;
 	align-self: center;
 }
+.menu-bar-Logo
+{
 
+	text-align: left;
+	font-family:  Verdana;
+	font-size: "60px";
+	font-weight: bolder;
+	font-variant-caps: all-petite-caps;
+	
+}
+.menu-bar-Logo ul
+{
+	display: inline-flex;
+	list-style-type: none;
+	color: greenyellow;
+}
+.menu-bar-Logo ul li
+{
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+}

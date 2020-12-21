@@ -14,6 +14,8 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import Avatar from '@material-ui/core/Avatar';
+import logo from '../images/Logo.png';
+import Avatar1 from '../images/Avatar.jpeg';
 
 
 import './Styles.css';
@@ -49,28 +51,44 @@ export default function ButtonAppBar() {
 }
 
   return (
-    <div className={classes.root}>
+    <div >
+      <table>
+        <tr>
+          <td>
+            <img class="Logo"  src={logo} />
+          </td>
+          <td class="DivMainTitle">
+            DIGICrop Private Limited
+          </td>
+        </tr>
+      </table>
+      
+      
+      
       <AppBar position="static" class="DivMarginHeaderInner" >
+      
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
+
+          
+          
+          
           <div class="menu-bar">
+          
 		<ul>
+      
 			<li class="active"><a href="#">Home</a></li>
 			
 			<li><a href="#">Farmers</a>
 
 				<div class="sub-menu-1">
 					<ul>
-						<li><a href="#">Nouns</a></li>
-						<li><a href="#">Adjectives</a></li>
-						<li><a href="#">Verbs</a></li>
-						<li><a href="#">Adverbs</a></li>
-						<li><a href="#">Conjunctions</a></li>
-						<li><a href="#">Prepositions</a></li>
-						<li><a href="#">Interjections</a></li>
+						<li><a href="SubmitData">Submit Data</a></li>
+						
 					</ul>
 					
 				</div>
@@ -91,8 +109,8 @@ export default function ButtonAppBar() {
 					
 				</div>
 			</li>
-			<li><a href="#">Contact Us</a></li>
-			<li><a href="#">Career</a></li>
+			<li><a href='ContactUs'>Contact Us</a></li>
+			<li><a href="Career">Career</a></li>
 		</ul>
 	</div>
           </Typography>
@@ -124,7 +142,7 @@ export default function ButtonAppBar() {
               }}><ExitToAppIcon></ExitToAppIcon>Login</Button>
             <div class="menu-bar_Profile">
              <ul>
-                <li><a href="#"><Avatar alt="Tushar Kashid" src='/images/Avatar.jpeg' /></a>
+                <li><a href="#"><Avatar alt="Tushar Kashid" src={Avatar1} /></a>
 
                   <div class="sub-menu-1">
                     <ul>
